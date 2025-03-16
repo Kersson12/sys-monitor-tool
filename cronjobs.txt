@@ -1,0 +1,8 @@
+# Ejecuta resource_monitor.sh cada hora (en el minuto 0)
+0 * * * * /ruta/al/proyecto/resource_monitor.sh >> /ruta/al/proyecto/resource_monitor.log 2>&1
+
+# Ejecuta backup_manager.sh diariamente a las 2:00 AM
+0 2 * * * /ruta/al/proyecto/backup_manager.sh >> /ruta/al/proyecto/backup_manager.log 2>&1
+
+# Ejecuta log_analyzer.sh diariamente a las 3:00 AM
+0 3 * * * /ruta/al/proyecto/log_analyzer.sh >> /ruta/al/proyecto/log_analyzer.log 2>&1
